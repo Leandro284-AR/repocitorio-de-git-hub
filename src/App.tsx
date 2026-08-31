@@ -61,9 +61,9 @@ export default function App() {
     <div className="flex flex-col h-screen bg-[#12141c] text-[#e0e0e0] overflow-hidden font-sans">
       
       {/* =========================================================================
-          BARRA SUPERIOR (TOP BAR)
+          BARRA SUPERIOR DE ENCABEZADO GLOBAL (SITE HEADER)
           ========================================================================= */}
-      <header className="h-16 bg-[#181a24] border-b border-[#222534] flex items-center justify-between px-4 sm:px-6 z-40 shrink-0">
+      <header className="h-16 bg-[#181a24] border-b border-[#222534] flex items-center justify-between px-4 sm:px-6 z-40 shrink-0 shadow-md">
         <div className="flex items-center gap-3">
           {/* Botón Hamburguesa para Móviles */}
           <button
@@ -75,27 +75,44 @@ export default function App() {
             {mobileMenuOpen ? '✕' : '☰'}
           </button>
 
-          {/* Logo y Título Principal */}
+          {/* Logo y Título Principal del Encabezado */}
           <div 
             onClick={() => handleNavigate('portada')}
-            className="flex items-center gap-2.5 cursor-pointer select-none group"
+            className="flex items-center gap-3 cursor-pointer select-none group"
           >
-            <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-lg shadow-md group-hover:scale-105 transition-transform">
-              🟠
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-400 flex items-center justify-center text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform border border-amber-400/40">
+              ⭐
             </div>
             <div>
-              <h1 className="text-base sm:text-lg font-black text-amber-500 tracking-wider group-hover:text-amber-400 transition-colors leading-tight">
-                DBZ ENCICLOPEDIA
-              </h1>
-              <p className="text-[10px] text-neutral-400 font-medium hidden sm:block">
-                Portal Oficial & Taller de Informática
+              <div className="flex items-center gap-2">
+                <h1 className="text-base sm:text-xl font-black text-amber-500 tracking-wider group-hover:text-amber-400 transition-colors leading-tight uppercase">
+                  DRAGON BALL Z ENCICLOPEDIA
+                </h1>
+                <span className="hidden lg:inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/40">
+                  W3C HTML5
+                </span>
+              </div>
+              <p className="text-[11px] text-neutral-400 font-medium hidden sm:block">
+                Portal Educativo &bull; Escuela Secundaria Técnica en Informática &bull; Salta, Argentina
               </p>
             </div>
           </div>
         </div>
 
-        {/* Acceso Rápido en la barra superior */}
+        {/* Accesos directos y destacados en la barra superior de encabezado */}
         <div className="flex items-center gap-2 sm:gap-3">
+          <button
+            onClick={() => handleNavigate('curso')}
+            className={`text-xs px-3 py-1.5 rounded-md font-semibold transition-all cursor-pointer hidden md:flex items-center gap-1.5 ${
+              activeSection === 'curso'
+                ? 'bg-amber-500 text-neutral-950 font-bold'
+                : 'bg-[#1c1f2e] text-neutral-300 border border-[#2a2e43] hover:border-amber-500/50'
+            }`}
+          >
+            <span>🎓</span>
+            <span>Curso Online</span>
+          </button>
+
           <button
             onClick={() => handleNavigate('blog')}
             className={`text-xs px-3 py-1.5 rounded-md font-semibold transition-all cursor-pointer hidden sm:flex items-center gap-1.5 ${
