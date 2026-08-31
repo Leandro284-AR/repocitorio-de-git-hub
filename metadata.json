@@ -1,0 +1,6 @@
+{
+  "name": "Dragon Ball Z Enciclopedia",
+  "description": "Enciclopedia completa de Dragon Ball Z con razas, personajes, sagas, blog, CV técnico, FAQ y Quiénes Somos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
