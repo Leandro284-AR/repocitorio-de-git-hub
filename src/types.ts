@@ -6,11 +6,52 @@ export type SectionId =
   | 'sagas'
   | 'episodios'
   | 'peliculas'
+  | 'curso'
   | 'blog'
   | 'cv'
   | 'faq'
   | 'quienes-somos'
   | 'contacto';
+
+export interface CourseStudyDetail {
+  studyTitle: string; // H5
+  content: string; // P
+  keyPoints: string[];
+  evaluationQuestion: string;
+}
+
+export interface CourseSubtopic {
+  subtopicTitle: string; // H4
+  estimatedMinutes: string;
+  summary: string; // P with BR
+  details: CourseStudyDetail[]; // H5
+}
+
+export interface CourseMainTopic {
+  id: string;
+  topicNumber: number;
+  topicTitle: string; // H3
+  description: string;
+  duration: string;
+  level: string;
+  badge: string;
+  subtopics: CourseSubtopic[]; // H4
+}
+
+export interface CourseInfo {
+  title: string; // H1/H2
+  subtitle: string;
+  code: string;
+  level: string;
+  duration: string;
+  modality: string;
+  certificate: string;
+  instructor: string;
+  description: string;
+  objectives: string[];
+  prerequisites: string[];
+  topics: CourseMainTopic[];
+}
 
 export interface Race {
   id: string;

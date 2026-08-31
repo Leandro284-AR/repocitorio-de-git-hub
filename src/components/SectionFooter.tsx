@@ -50,6 +50,13 @@ export const SectionFooter: React.FC<SectionFooterProps> = ({ sectionName, onNav
             </button>
             <span>·</span>
             <button 
+              onClick={() => onNavigate('curso')} 
+              className="hover:text-amber-400 transition-colors cursor-pointer"
+            >
+              Curso Online
+            </button>
+            <span>·</span>
+            <button 
               onClick={() => onNavigate('blog')} 
               className="hover:text-amber-400 transition-colors cursor-pointer"
             >

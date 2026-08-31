@@ -7,6 +7,7 @@ import { TransformacionesSection } from './components/TransformacionesSection';
 import { SagasSection } from './components/SagasSection';
 import { EpisodiosSection } from './components/EpisodiosSection';
 import { PeliculasSection } from './components/PeliculasSection';
+import { CursoSection } from './components/CursoSection';
 import { BlogSection } from './components/BlogSection';
 import { CVSection } from './components/CVSection';
 import { FAQSection } from './components/FAQSection';
@@ -48,7 +49,8 @@ export default function App() {
     { id: 'sagas', label: 'Sagas', icon: '🔥' },
     { id: 'episodios', label: 'Episodios', icon: '📺' },
     { id: 'peliculas', label: 'Películas', icon: '🎬' },
-    { id: 'blog', label: 'Blog & Artículos', icon: '📰', badge: 'Nuevo' },
+    { id: 'curso', label: 'Curso & Guía de Estudio', icon: '🎓', badge: 'Req 2' },
+    { id: 'blog', label: 'Blog & Artículos', icon: '📰', badge: 'Req 3' },
     { id: 'cv', label: 'CV Técnico (Informática)', icon: '👨‍💻', badge: 'Req 4' },
     { id: 'faq', label: 'Preguntas Frecuentes', icon: '❓' },
     { id: 'quienes-somos', label: 'Quiénes Somos', icon: '👥' },
@@ -210,6 +212,7 @@ export default function App() {
             {activeSection === 'sagas' && <SagasSection onNavigate={handleNavigate} />}
             {activeSection === 'episodios' && <EpisodiosSection onNavigate={handleNavigate} />}
             {activeSection === 'peliculas' && <PeliculasSection onNavigate={handleNavigate} />}
+            {activeSection === 'curso' && <CursoSection onNavigate={handleNavigate} />}
             {activeSection === 'blog' && <BlogSection onNavigate={handleNavigate} />}
             {activeSection === 'cv' && <CVSection onNavigate={handleNavigate} />}
             {activeSection === 'faq' && <FAQSection onNavigate={handleNavigate} />}

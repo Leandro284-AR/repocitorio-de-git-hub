@@ -1,4 +1,4 @@
-import { Race, Character, Transformation, Saga, Episode, Movie, BlogPost, FAQItem, CVData } from '../types';
+import { Race, Character, Transformation, Saga, Episode, Movie, BlogPost, FAQItem, CVData, CourseInfo } from '../types';
 
 export const RACES_DATA: Race[] = [
   {
@@ -817,3 +817,194 @@ def diagnosticar_sistema():
 if __name__ == "__main__":
     diagnosticar_sistema()`
 };
+
+export const COURSE_DATA: CourseInfo = {
+  title: 'CURSO UNIVERSITARIO DE ANÁLISIS NARRATIVO, DISEÑO DE PERSONAJES Y TRANSMEDIA EN DRAGON BALL Z',
+  subtitle: 'Guía Integral de Estudio Académico: Cosmología, Biomecánica del Ki, Arcos Dramáticos y Semiótica del Shonen',
+  code: 'DBZ-ACA-401',
+  level: 'Nivel Técnico / Superior',
+  duration: '64 Horas Cátedra (8 Módulos Teórico-Prácticos)',
+  modality: 'Online Asincrónico con Talleres Prácticos y Evaluaciones por Etapas',
+  certificate: 'Certificado de Aprobación en Guionismo y Análisis Transmedia',
+  instructor: 'Cátedra de Narrativa Gráfica & Laboratorio de Informática Aplicada',
+  description: 'Este programa de formación académica ofrece un estudio exhaustivo sobre el universo creado por Akira Toriyama. A través de una metodología rigurosa, el estudiante analizará las estructuras mitológicas, los sistemas de combate, las curvas de progresión de poder y las estrategias de adaptación audiovisual que convirtieron a Dragon Ball Z en el pilar del anime moderno.',
+  objectives: [
+    'Dominar los principios estructurales del viaje del héroe aplicados a las cuatro sagas principales (Saiyajin, Freezer, Cell y Majin Buu).',
+    'Comprender la física ficticia y la termodinámica del Ki, así como las escalas de poder oficiales documentadas en los Daizenshuu.',
+    'Analizar la evolución psicológica de los personajes arquetípicos: la redención del antihéroe (Vegeta), la crisis generacional (Gohan) y la pureza marcial (Goku).',
+    'Implementar metodologías de diseño de personajes, siluetas icónicas y paletas de color en proyectos transmedia contemporáneos.'
+  ],
+  prerequisites: [
+    'Conocimientos básicos de narrativa audiovisual o apreciación cinematográfica.',
+    'Haber visualizado o leído los arcos fundamentales del manga/anime de Dragon Ball Z.'
+  ],
+  topics: [
+    {
+      id: 'modulo-1',
+      topicNumber: 1,
+      topicTitle: 'MÓDULO 1: COSMOLOGÍA, MITOLOGÍA Y JERARQUÍAS UNIVERSALES',
+      description: 'Exploración de la estructura ontológica del macrocosmos: el reino de los vivos, el otro mundo, las esferas del dragón y las deidades creadoras y destructoras.',
+      duration: '8 Horas',
+      level: 'Fundamentos',
+      badge: 'Módulo Teórico',
+      subtopics: [
+        {
+          subtopicTitle: 'Subtema 1.1: La Geografía del Macrocosmos y el Más Allá',
+          estimatedMinutes: '45 min',
+          summary: 'Cartografía del Universo 7 según el Daizenshuu 7.<br />Estructura esférica dividida entre el Reino Mortal, el Paraíso, el Infierno y el Reino de los Supremos Kaiosamas.',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 1.1.1: El Palacio de Enma Daioh y el Camino de la Serpiente',
+              content: 'Análisis del juicio kármico de las almas y la travesía de un millón de kilómetros como rito iniciático para alcanzar el entrenamiento del Kaio del Norte.',
+              keyPoints: [
+                'Longitud mística del camino: 1,000,000 km sobre el mar de nubes del Infierno.',
+                'Condición espiritual: Preservación del cuerpo físico para guerreros virtuosos.',
+                'Gravedad diferencial: El planeta de Kaio posee 10 veces la gravedad terrestre en un diámetro de apenas decenas de metros.'
+              ],
+              evaluationQuestion: '¿Por qué Enma Daioh permitió a Goku conservar su cuerpo físico tras su primer fallecimiento ante Raditz?'
+            },
+            {
+              studyTitle: 'Detalle de Estudio 1.1.2: Las Jerarquías Divinas y el Rol de los Kaioshin',
+              content: 'Organización de los dioses creadores (Shinjin) y su contraparte de equilibrio destructivo en la escala cósmica.',
+              keyPoints: [
+                'Árbol Kaiju: Origen vegetal de los Shinjin nacidos del Árbol del Mundo en el Planeta Kaishin.',
+                'Potara vs Danza de la Fusión: Naturaleza divina de la unión de pendientes y su carácter permanente para deidades.',
+                'La Espada Z: Sello místico que aprisionó al Anciano Kaioshin de hace 15 generaciones.'
+              ],
+              evaluationQuestion: 'Explique la diferencia de efectividad y tiempo de duración entre la Fusión Potara y la Danza Metamor.'
+            }
+          ]
+        },
+        {
+          subtopicTitle: 'Subtema 1.2: El Origen de las Esferas del Dragón y los Namekuseijins',
+          estimatedMinutes: '50 min',
+          summary: 'La magia de los clanes dragón de Namek.<br />Límites, restricciones y condiciones de resurrección entre Shenron y Porunga.',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 1.2.1: El Gran Patriarca y las Reglas de Porunga',
+              content: 'Comparativa de capacidades: Shenron concede 1 deseo (luego 2/3 con Dende) pero puede revivir a multitudes; Porunga concede 3 deseos pero originalmente sólo revivía a 1 individuo por deseo.',
+              keyPoints: [
+                'Idioma sagrado Namekiano: Clave obligatoria para formular deseos ante Porunga.',
+                'Vínculo vital: Si el creador de las esferas muere, las esferas se convierten en piedra inerte.'
+              ],
+              evaluationQuestion: '¿Cuál fue la táctica de Kaio del Norte en Namek para sincronizar los deseos de Shenron y Porunga?'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'modulo-2',
+      topicNumber: 2,
+      topicTitle: 'MÓDULO 2: BIOMECÁNICA DEL KI, FISIOLOGÍA SAIYAJIN Y ESCALAS DE PODER',
+      description: 'Estudio de la energía vital interna (Genki, Yuki, Shoki), la genética del Zenkai y la progresión matemática de los multiplicadores.',
+      duration: '12 Horas',
+      level: 'Técnico / Analítico',
+      badge: 'Ciencia de Combate',
+      subtopics: [
+        {
+          subtopicTitle: 'Subtema 2.1: La Triada del Ki (Genki, Yuki, Shoki)',
+          estimatedMinutes: '60 min',
+          summary: 'Desglose formulado por Akira Toriyama sobre los componentes del Ki.<br />Diferenciación entre vigor físico, coraje mental y serenidad emocional.',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 2.1.1: Componentes Esenciales de la Energía Vital',
+              content: 'El Ki no es simplemente fuerza bruta; es la conjunción equilibrada de tres estados psico-fisiológicos indispensables para proyectar ráfagas energéticas.',
+              keyPoints: [
+                'Genki (元気): Vigor y energía física pura; base de la Genkidama.',
+                'Yūki (勇気): Coraje, determinación y valentía en el campo de batalla.',
+                'Shōki (正気): Mente clara, juicio correcto y control de las emociones.'
+              ],
+              evaluationQuestion: '¿Por qué la técnica de la Genkidama requiere que el usuario posea un corazón puro y sereno?'
+            }
+          ]
+        },
+        {
+          subtopicTitle: 'Subtema 2.2: Fisiología de las Transformaciones de Super Saiyajin',
+          estimatedMinutes: '75 min',
+          summary: 'Genética de las Células S, detonantes emocionales y multiplicadores oficiales.<br />Evolución desde el SSJ Ordinario hasta el SSJ3 y el Estado Definitivo de Gohan.',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 2.2.1: Multiplicadores Matemáticos de Combate',
+              content: 'Documentación canónica sobre la amplificación del poder base según las guías Daizenshuu y Super Exciting Guide.',
+              keyPoints: [
+                'Super Saiyajin Grado 1: Multiplicador x50 sobre el poder base.',
+                'Super Saiyajin 2: Multiplicador x100 sobre el poder base (2x SSJ1).',
+                'Super Saiyajin 3: Multiplicador x400 sobre el poder base (4x SSJ2), con un severo drenaje de estamina.',
+                'Estado Definitivo (Ultimate Gohan): Desbloqueo del 100% del potencial latente sin gasto acelerado de energía.'
+              ],
+              evaluationQuestion: '¿Por qué la forma Super Saiyajin Grado 3 (Dai San Dankai de Trunks) resultó inefectiva en combate real frente a Cell?'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'modulo-3',
+      topicNumber: 3,
+      topicTitle: 'MÓDULO 3: ESTRUCTURA DRAMÁTICA, ARCOS NARRATIVOS Y DISEÑO DE ANTAGONISTAS',
+      description: 'Análisis de los cuatro grandes arcos argumentales de DBZ y los modelos de antagonistas: el invasor colonial, el tirano corporativo, la amenaza biológica y el caos primordial.',
+      duration: '14 Horas',
+      level: 'Avanzado / Guionismo',
+      badge: 'Diseño Narrativo',
+      subtopics: [
+        {
+          subtopicTitle: 'Subtema 3.1: Arquetipos de Villanos y sus Simbolismos',
+          estimatedMinutes: '90 min',
+          summary: 'La evolución temática del antagonismo en la serie.<br />De la amenaza familiar y bélica (Saiyajin) a la destrucción existencial y psicológica (Majin Buu).',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 3.1.1: Freezer y la Metáfora de la Especulación Inmobiliaria',
+              content: 'Toriyama concibió a Freezer inspirándose en los especuladores de bienes raíces de la burbuja económica japonesa de los años 80, presentándolo como un emperador inmobiliario intergaláctico.',
+              keyPoints: [
+                'Modelo de conquista: Conquista planetaria sistemática mediante la purga de especies nativas para su reventa.',
+                'Estructura jerárquica: Organización piramidal con fuerzas especiales de élite (Fuerzas Especiales Ginyu).',
+                'Sadismo aristocrático: Contraste entre modales corteses y crueldad despiadada.'
+              ],
+              evaluationQuestion: '¿Qué elementos visuales y narrativos diferencian la transformación final de Freezer de sus fases previas?'
+            },
+            {
+              studyTitle: 'Detalle de Estudio 3.1.2: Cell y el Terror Biológico de la Perfección',
+              content: 'Diseño biomecánico y estructura narrativa de cuenta regresiva hacia el torneo de artes marciales.',
+              keyPoints: [
+                'Consumo y absorción: Uso de la cola retráctil para absorber la bio-materia de ciborgs 17 y 18.',
+                'Mosaico genético: Concentración del ADN de Goku, Vegeta, Piccolo, Freezer y King Cold.',
+                'Arrogancia intelectual: Organización del Torneo de Cell para poner a prueba su perfección absoluta.'
+              ],
+              evaluationQuestion: 'Explique cómo el despertar del Super Saiyajin 2 de Gohan descompone psicológicamente la ilusión de perfección de Cell.'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'modulo-4',
+      topicNumber: 4,
+      topicTitle: 'MÓDULO 4: GUÍA PRÁCTICA DE REPASO, AUTOEVALUACIÓN Y PROYECTO FINAL',
+      description: 'Síntesis de conceptos clave, compendio de términos canónicos, glosario técnico y pautas para la elaboración del ensayo de graduación.',
+      duration: '10 Horas',
+      level: 'Evaluación y Cierre',
+      badge: 'Taller Práctico',
+      subtopics: [
+        {
+          subtopicTitle: 'Subtema 4.1: Glosario Técnico y Formulario de Examen Final',
+          estimatedMinutes: '60 min',
+          summary: 'Revisión cruzada de terminología oficial en japonés y traducciones latinas.<br />Instrucciones para la entrega de la monografía analítica del curso.',
+          details: [
+            {
+              studyTitle: 'Detalle de Estudio 4.1.1: Parámetros del Trabajo Monográfico de Fin de Cursada',
+              content: 'El estudiante deberá redactar un ensayo comparativo de 5 páginas analizando el arco de redención de Vegeta o la dinámica de legado generacional entre Goku y Gohan.',
+              keyPoints: [
+                'Estructura académica: Introducción, Hipótesis, Desarrollo con citas canónicas y Conclusión.',
+                'Fuentes requeridas: Citas del Manga original (tomos 17 al 42) y guías Daizenshuu.',
+                'Defensa oral: Exposición de 10 minutos ante el comité evaluador del taller de informática.'
+              ],
+              evaluationQuestion: 'Sintetice en 3 premisas el impacto de la muerte de Goku frente a Cell en la psicología del joven Trunks del Futuro.'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
